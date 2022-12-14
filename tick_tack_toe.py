@@ -13,7 +13,7 @@ def print_board(board):
     print("__________")
     print(board[6] + " | " + board[7] + " | " + board[8])
 
-# Take player input
+# Take player input (If player input is not an int the program shuts down)
 def player_input(board):
     inp = int(input("Enter a number 1-9: "))
     if 1 <= inp <= 9 and board[inp - 1] == "_":
